@@ -1,6 +1,7 @@
 {
   "name": "shift-dash",
   "version": "0.1.0",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,9 +10,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/uuid": "^9.0.8",
+    "bootstrap": "^5.3.3",
+    "next": "14.2.2",
+    "node-sass": "^9.0.0",
     "react": "^18",
+    "react-apexcharts": "^1.4.1",
+    "react-bootstrap": "^2.10.2",
+    "react-bootstrap-icons": "^1.11.4",
     "react-dom": "^18",
-    "next": "14.2.2"
+    "react-dropzone": "^14.2.3",
+    "react-feather": "^2.0.10",
+    "react-responsive": "^10.0.0",
+    "sass": "^1.75.0",
+    "sass-loader": "^14.2.1",
+    "simplebar": "^6.2.5",
+    "simplebar-react": "^3.2.4",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "typescript": "^5",
