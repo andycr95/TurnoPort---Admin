@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  turno-port:
+    container_name: turno-port
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # Set envrionment variables based on the .env file
+    env_file:
+      - .env
+    # Set environment variables directly in the docker-compose file
+    volumes:
+      - .:/app/turno-port
+    restart: always
+    ports:
+      - 3000:3000
