@@ -7,14 +7,18 @@ COPY bun.lockb ./
 
 
 
-ENV NEXT_TELEMETRY_DISABLED 1
-
 
 RUN bun install
 
 COPY . .
 
+RUN bun prisma migrate dev --name init
+
+RUN bun prisma generate
+
 RUN bun next build
+
+ENV NEXT_TELEMETRY_DISABLED 1
 
 EXPOSE 3000
 
